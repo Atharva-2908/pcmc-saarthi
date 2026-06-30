@@ -1,0 +1,6 @@
+{
+  "name": "PCMC Saarthi",
+  "description": "A civic complaint management system for Pimpri-Chinchwad Municipal Corporation, India.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
