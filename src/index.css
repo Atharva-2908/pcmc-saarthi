@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-navy-50: #f0f7ff;
+  --color-navy-100: #e0f0ff;
+  --color-navy-700: #003366;
+  --color-navy-800: #002B52;
+  --color-navy-900: #002244;
+  --color-brand-orange-500: #f97316;
+  --color-brand-orange-600: #ea580c;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F3F7FA;
+}
+
+/* Custom subtle animation utilities */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
